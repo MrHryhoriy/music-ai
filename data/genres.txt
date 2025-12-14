@@ -1,0 +1,36 @@
+rock
+alternative rock
+indie rock
+hard rock
+metal
+heavy metal
+thrash metal
+death metal
+black metal
+punk
+pop
+synthpop
+electronic
+house
+techno
+trance
+drum and bass
+hip hop
+rap
+trap
+phonk
+jazz
+blues
+classical
+orchestral
+piano
+ambient
+lofi
+reggae
+ska
+folk
+country
+latin
+afrobeat
+k-pop
+soundtrack

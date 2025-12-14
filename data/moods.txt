@@ -1,0 +1,17 @@
+energetic
+upbeat
+happy
+sad
+calm
+relaxing
+dark
+aggressive
+romantic
+melancholic
+epic
+motivational
+chill
+focus
+party
+study
+sleep

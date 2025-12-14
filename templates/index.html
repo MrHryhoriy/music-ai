@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Music AI — Genre & Mood</title>
+    <link rel="stylesheet" href="/static/style.css" />
+  </head>
+  <body>
+    <div class="bg"></div>
+
+    <main class="wrap">
+      <header class="hero">
+        <div class="badge">AI • Audio</div>
+        <h1>Класифікатор музики</h1>
+        <p>
+          Завантаж трек або встав <b>пряме</b> посилання на аудіофайл — отримаєш
+          <b>Top-5</b> жанрів і настроїв.
+        </p>
+      </header>
+
+      <section class="card">
+        <form id="form" class="form">
+          <div class="row">
+            <div class="col">
+              <label>Файл</label>
+              <input
+                type="file"
+                name="file"
+                id="file"
+                accept=".mp3,.wav,.flac,.ogg,.m4a,.aac"
+              />
+              <div class="hint">
+                Найнадійніше для демо — завантажити локальний mp3.
+              </div>
+            </div>
+
+            <div class="col">
+              <label>Або URL (прямий аудіофайл)</label>
+              <input
+                type="url"
+                name="url"
+                id="url"
+                placeholder="https://example.com/song.mp3"
+              />
+              <div class="hint">
+                Посилання на сторінку з плеєром (HTML) не підійде.
+              </div>
+            </div>
+          </div>
+
+          <button type="submit" id="btn" class="btn">
+            <span class="btnText">Класифікувати</span>
+          </button>
+
+          <div id="status" class="status"></div>
+        </form>
+      </section>
+
+      <section id="result" class="card hidden">
+        <div class="resultHead">
+          <div>
+            <div class="kicker">Результат</div>
+            <h2 id="headline">—</h2>
+            <div id="rec" class="rec">—</div>
+          </div>
+        </div>
+
+        <div class="grid">
+          <div class="panel">
+            <div class="panelTitle">Top-5 жанрів</div>
+            <div id="genres" class="bars"></div>
+          </div>
+
+          <div class="panel">
+            <div class="panelTitle">Top-5 настроїв</div>
+            <div id="moods" class="bars"></div>
+          </div>
+        </div>
+
+        <div class="footnote">
+          Порада: якщо URL не прямий аудіофайл — завантаж mp3 файлом.
+        </div>
+      </section>
+
+      <footer class="footer">© Demo • Flask + CLAP</footer>
+    </main>
+
+    <script src="/static/app.js?v=5"></script>
+  </body>
+</html>

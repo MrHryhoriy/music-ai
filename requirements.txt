@@ -1,0 +1,7 @@
+flask>=3.0.0
+gunicorn>=22.0.0
+transformers>=4.40.0
+torch>=2.1.0
+pydub>=0.25.1
+requests>=2.31.0
+numpy>=1.26.0
